@@ -33,7 +33,7 @@ function updateYear() {
     setYear.innerText = fullyear
 }
 updateYear()
-// Update the date every hour
+// Update the date every hour2r`1
 setInterval(updateYear,3600000)
 
 
