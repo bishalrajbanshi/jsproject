@@ -7,6 +7,6 @@ let randNum = Math.floor(Math.random() * 100) + 1
 
 gussNum.addEventListener('click',(e)=>{
     if (userNum.value == randNum) {
-        
+        displayNum.innerHTML = randNum
     }
 })
