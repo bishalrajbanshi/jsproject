@@ -8,6 +8,10 @@ add.addEventListener('click',(e)=>{
     e.preventDefault()
 
    const inputValue = userInput.value.trim()
+   if (inputValue === '') {
+    alert('empty work')
+    return
+   }
 
    //push the value in array
    info.push(inputValue)
@@ -18,6 +22,7 @@ add.addEventListener('click',(e)=>{
 function renderValue(item,index){
     const li = document.createElement('li')
     const del = document.createElement('button')
+    del.classList.add('delbtn'); // Add delete button class
 
     li.innerText = item //set the text for item list
     del.innerText = "Delete"
